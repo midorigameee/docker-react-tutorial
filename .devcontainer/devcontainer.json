@@ -1,0 +1,27 @@
+// コンテナ上のVSCodeの設定
+{
+    // VSCode上で表示される名前
+    "name": "React App",
+    // docker-composeファイルのパス
+    "dockerComposeFile": "../docker-compose.yml",
+    // docker-composeのサービス
+    "service": "app",
+    // VSCodeのルートディレクトリ
+    "workspaceFolder": "/home",
+    // コンテナからホストに転送するポートリスト
+    "forwardPorts": [3000],
+    // VSCodeの設定等
+    "customizations": {
+      "vscode": {
+        // 拡張機能リスト(拡張機能IDを指定)
+        "extensions": ["MS-CEINTL.vscode-language-pack-ja"]
+      },
+    },
+    "settings":{
+      "terminal.integrated.defaultProfile.linux": "bash",
+      "editor.tabSize": 2
+    },
+    "mounts": [
+        "source=sample-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
+    ],
+  }

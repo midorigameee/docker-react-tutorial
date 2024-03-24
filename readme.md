@@ -11,15 +11,15 @@ VS CodeでDocker動かせるようになりたい。
 
 # 作業進捗メモ
 
-##　Reactのコンテナ作成
+## Reactのコンテナ作成
 Docker HubからNode.jsのイメージを持ってきて、イメージをビルドする時に一緒にReactとTypescriptもインストールする設定にした。
 
-##　ナゾ
+## ナゾ
 docker compose up -dでビルドイメージ引っ張ってきてコンテナ起動するとコンテナ名がdocker-react-tutorialになる。どこで指定されているんだ？？
 ↓
 解決した。docker　composeでイメージを作成するとそのイメージのリポジトリ名は作業フォルダ名になるらしい。
 
-#　参考にしているサイト
+# 参考にしているサイト
 - Node.jsのコンテナ作成
 <https://zenn.dev/boarinclover/articles/a839e8d24ff9c0>
 <https://hub.docker.com/_/node/>

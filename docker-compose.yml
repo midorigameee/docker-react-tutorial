@@ -7,5 +7,9 @@ services:
     ports:
       - '3000:3000'
     volumes:
-      - ./:/usr/src/app 
+      - ./:/home 
     tty: true
+# volumeを追加する理由
+# https://qiita.com/takashiuesaka/items/4012fee49ee0e06db72b
+volumes:
+  home:

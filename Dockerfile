@@ -21,4 +21,4 @@ RUN npm install -g typescript
 
 # ワークディレクトリを設定
 # WORKDIR /home/foge/
-WORKDIR /usr/
+WORKDIR /home/
